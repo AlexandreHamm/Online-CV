@@ -1,0 +1,28 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+.vidspace{
+    height: 100vh;
+}
+section{
+    padding-top: 20px;
+    height: 1080px;
+}
+.nav-pills > li > a:hover, .nav-pills > li > a:focus, .nav-pills > li > a {
+    font-size: 14px !important;
+    background-color: transparent !important;
+    margin: 0 5px !important;
+    padding: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+#ex1{
+    margin: 0 0 !important;
+}
+#navbarDropdown{
+    padding: 0 0 0 0;
+}
