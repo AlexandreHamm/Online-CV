@@ -24,20 +24,3 @@ y.onclick = function(){
 
 // TEST SCROLL DOWN
 
-//Get the button
-let mybutton = document.getElementById("btn-tab");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (
-    window.scrollY > window.innerHeight
-  ) {
-    mybutton.style.display = "none";
-  } else {
-    mybutton.style.display = "block";
-  }
-}

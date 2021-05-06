@@ -23,30 +23,27 @@
     right: 0;
     bottom: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
     min-width: 100%;
     min-height: 100%;
     z-index: -2;
-    color: rgba(255, 255, 255, 0.76);
-    text-shadow: 5px 5px 3px black;
+    color: rgb(255, 255, 255);
+}
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center; 
+    font-size: 50px;
 }
 #logo{
     margin: 0 20px;
     max-width: 35px;
-    max-height: 35px;
-    opacity: 80%;
+    opacity: 85%;
+    border-radius: 10%;
 }
 #logo:hover{
     opacity: 100%;
     transition: 0.5s;
-}
-#alex{
-    font-size: 70px;
-}
-#hamm{
-    margin-left: 24vw;
-    margin-right: 24vw;
-    font-size: 70px;
 }
 .vidspace{
     height: 100vh;
@@ -65,6 +62,9 @@ section{
 .nav-pills li, .navbar-nav li{
     margin: 0 20px;
 }
+.text-uppercase{
+    font-size: 15px;
+}
 #ex1{
     margin: 0 0 !important;
 }
@@ -73,6 +73,10 @@ section{
 }
 .nav-link.active{
     color: black !important;
+}
+#ex1-pills-1{
+    padding-top: 75px;
+    margin-top: -75px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -88,17 +92,26 @@ section{
         max-height: 100%;
         opacity: 60%;
     }
+    #ex1-pills-1{
+        padding: 20px;
+        margin: -20px;
+    }
 }
 
 /* TEST */
 #btn-tab{
-    font-size: 30px;
+    font-size: 24px;
     width: 55px;
     height: 55px;
     position: absolute;
     bottom: 50px;
     display: block;
     scroll-behavior: smooth;
+    opacity: 70%;
+}
+#btn-tab:hover{
+    opacity: 100%;
+    transition: 0.5s;
 }
 #btn-tab i{
     position: relative;
