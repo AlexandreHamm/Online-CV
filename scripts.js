@@ -1,9 +1,9 @@
 // video responsive
 function myFunction(x) {
     if (x.matches) { // If media query matches
-        document.querySelector('video').playbackRate = 0.8;
+        document.querySelector('video').playbackRate = 1;
     } else {
-        document.querySelector('video').playbackRate = 0.8;
+        document.querySelector('video').playbackRate = 1;
     }
   }
 
@@ -20,4 +20,24 @@ var y = document.getElementById('ex1-pills-1');
 y.onclick = function(){
     return false;
     }
+}
+
+// TEST SCROLL DOWN
+
+//Get the button
+let mybutton = document.getElementById("btn-tab");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    window.scrollY > window.innerHeight
+  ) {
+    mybutton.style.display = "none";
+  } else {
+    mybutton.style.display = "block";
+  }
 }
