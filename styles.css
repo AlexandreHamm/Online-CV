@@ -6,7 +6,7 @@
     height: 100vh;
     z-index: -2;
     filter: brightness(100%) grayscale(80%);
-    opacity: 70%;
+    opacity: 50%;
 }
 #myVideo {
     position: fixed;
