@@ -19,6 +19,7 @@
     filter: saturate(100%) grayscale(100%);
 }
 .name{
+    background-color: rgba(255, 255, 255, 0.15);
     position: fixed;
     right: 0;
     bottom: 0;
@@ -28,12 +29,22 @@
     min-width: 100%;
     min-height: 100%;
     z-index: -2;
-    color: rgb(255, 255, 255);
 }
 h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center; 
     font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+h2{
+    margin-bottom: 50px;
+}
+.transparent{
+    position: relative;
+    top: 25px;
+    text-align: center;
+    color: rgba(255, 0, 0, 0);
+    text-shadow: 5px 5px 0px black;
 }
 #logo{
     margin: 0 20px;
@@ -78,8 +89,12 @@ section{
     padding-top: 75px;
     margin-top: -75px;
 }
-#ex1-pills-1{
+#ex1-pills-1, #ex1-pills-2, #ex1-pills-3{
     text-align: center;
+}
+#pf{
+    display: flex;
+    justify-content: center;
 }
 
 .navbar-nav{
@@ -87,7 +102,28 @@ section{
     left: 1.4%;
 }
 .border-grey{
-    border-top: 10px solid rgb(230, 230, 230);
+    border-top: 10px solid rgb(177, 177, 177);
+}
+.aboutme{
+    max-width: 400px;
+    max-height: 400px;
+    filter: grayscale(40%);
+}
+.aboutme:hover{
+    filter: grayscale(10%);
+    transition: 0.5s;
+}
+.aboutmetitle{
+    height: 30px;
+    color: rgba(255, 255, 255, 0.575);
+}
+.aboutmetitle:hover{
+    color: white;
+    transition: 0.3s;
+}
+.aboutmetxt{
+    margin-top: 20px;
+    text-align: justify;
 }
 
 @media screen and (max-width: 1000px) {
@@ -122,6 +158,7 @@ section{
     display: block;
     scroll-behavior: smooth;
     opacity: 70%;
+    box-shadow: 2px 2px 3px black;
 }
 #btn-tab:hover{
     opacity: 100%;
