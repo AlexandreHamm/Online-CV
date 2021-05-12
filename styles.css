@@ -101,10 +101,10 @@ section{
     color: black !important;
 }
 #ex1-content{
-    padding-top: 75px;
-    margin-top: -75px;
+    padding-top: 72px;
+    margin-top: -72px;
 }
-#ex1-pills-1, #ex1-pills-2, #ex1-pills-3{
+#ex1-pills-1, #ex1-pills-2, #ex1-pills-3, #ex1-pills-4{
     text-align: center;
 }
 #pf{
@@ -139,10 +139,6 @@ section{
 .aboutmetxt{
     margin-top: 20px;
     text-align: justify;
-}
-.language{
-    font-size: 18px;
-    margin-top: 70px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -194,69 +190,135 @@ section{
 
 
 /* PROGRESS BARS */
-.progress-section{text-align: center; padding: 80px 0px;}
 
-.progress-bars, .progress-bars-four, .progress-bars-six, .progress-bars-seven{
-    margin-right: 50px;
+.stretch-card>.card {
+    width: 100%;
+    min-width: 100%
 }
 
-.progress-bars{ margin: auto; background: #595959; width: 120px; height: 120px; transform: rotate(45deg); position: relative;}
-.progress-bars h5, .fa-html5 { line-height: 0px; text-align: center; transform: rotate(-45deg);}
-.progress-bars h5{
-    margin-left: 20px;
+body {
+    background-color: #f9f9fa
 }
-.progress-bars .fa-html5{ 
-    font-size: 30px; margin-bottom: 25px; margin-right: 30px;
-}
-.progress-bars h5, .fa-html5{
-    color: white;
-}
-.progress-bars:before{position: absolute; content: ""; border: solid 5px #595959; border-width: 5px 0px 0px 5px; width: 30px; height: 30px; top: -9px; left: -9px; bottom: -9px; right: -9px; z-index: 10;}
-.progress-bars:after{position: absolute; content: ""; border: solid 5px #ef2b2b; border-width: 5px 5px 5px 5px; width: 140px; height: 140px; top: -9px; left: -9px; bottom: -9px; right: -9px;}
 
-.css:after{position: absolute; content: ""; border: solid 5px #efec2b; border-width: 5px 5px 5px 5px; width: 140px; height: 140px; top: -9px; left: -9px; bottom: -9px; right: -9px;}
-.bs:after{position: absolute; content: ""; border: solid 5px #b72bef; border-width: 5px 5px 5px 5px; width: 140px; height: 140px; top: -9px; left: -9px; bottom: -9px; right: -9px;}
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
 
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem
+    }
+}
 
-.progress-bars-four{ margin: auto; background: #595959; width: 120px; height: 120px; transform: rotate(45deg); position: relative;}
-.progress-bars h5, .fa-css3-alt { line-height: 0px; text-align: center; transform: rotate(-45deg); color: white;}
-.progress-bars h5{
-    margin-left: 20px;
-    color: white;
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem
+    }
 }
-.progress-bars .fa-css3-alt{ 
-    font-size: 30px; margin-bottom: 25px; margin-right: 30px;
-}
-.progress-bars-four:before{position: absolute; content: ""; border: solid 5px #595959; border-width: 5px 0px 0px 5px; width: 120px; height: 120px; top: -9px; left: -9px; bottom: -9px; right: -9px; z-index: 10;}
-.progress-bars-four:after{position: absolute; content: ""; border: solid 5px #efec2b; border-width: 5px 5px 5px 5px; width: 140px; height: 140px; top: -9px; left: -9px; bottom: -9px; right: -9px;}
 
+.padding {
+    padding: 3rem
+}
 
+.card {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none
+}
 
-.progress-bars-six{ margin: auto; background: #595959; width: 120px; height: 120px; transform: rotate(45deg); position: relative;}
-.progress-bars-six h5, .fa-js { line-height: 0px; text-align: center; transform: rotate(-45deg);}
-.progress-bars-six h5{
-    margin-left: 15px;
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 0;
 }
-.progress-bars-six .fa-js{ 
-    font-size: 30px; margin-bottom: 25px; margin-right: 30px;
-}
-.progress-bars-six h5, .fa-js{
-    color: white;
-}
-.progress-bars-six:before{position: absolute; content: ""; border: solid 5px #595959; border-width: 5px 0px 0px 5px; width: 90px; height: 90px; top: -9px; left: -9px; bottom: -9px; right: -9px; z-index: 10;}
-.progress-bars-six:after{position: absolute; content: ""; border: solid 5px #2bb0ef; border-width: 5px 5px 5px 5px; width: 140px; height: 140px; top: -9px; left: -9px; bottom: -9px; right: -9px;}
 
+.card .card-block {
+    padding: 1.25rem
+}
 
-.progress-bars-seven{ margin: auto; background: #595959; width: 120px; height: 120px; transform: rotate(45deg); position: relative;}
-.progress-bars-seven h5, .fa-bootstrap{ line-height: 0px; text-align: center; transform: rotate(-45deg);}
-.progress-bars h5{
-    margin-left: 15px;
+h6 {
+    font-size: 16px !important
 }
-.progress-bars .fa-bootstrap{ 
-    font-size: 30px; margin-bottom: 25px; margin-right: 30px;
+
+.text-c-green {
+    color: #2ed8b6
 }
-.progress-bars h5, .fa-bootstrap{
-    color: white;
+
+.m-l-10 {
+    margin-left: 10px
 }
-.progress-bars-seven:before{position: absolute; content: ""; border: solid 5px #595959; border-width: 5px 0px 0px 5px; width: 70px; height: 70px; top: -9px; left: -9px; bottom: -9px; right: -9px; z-index: 10;}
-.progress-bars-seven:after{position: absolute; content: ""; border: solid 5px #b72bef; border-width: 5px 5px 5px 5px; width: 140px; height: 140px; top: -9px; left: -9px; bottom: -9px; right: -9px;}
+
+.proj-progress-card .progress {
+    height: 6px;
+    overflow: visible;
+    margin-bottom: 10px
+}
+
+.proj-progress-card .progress .progress-bar {
+    position: relative
+}
+
+.progress .progress-bar {
+    height: 100%;
+    color: inherit
+}
+
+.bg-c-red {
+    background: #FF5370
+}
+
+.proj-progress-card .progress .progress-bar.bg-c-red:after {
+    border: 3px solid #FF5370
+}
+
+.proj-progress-card .progress .progress-bar:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    right: -6px;
+    top: -4px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px
+}
+
+.bg-c-blue {
+    background: #4099ff
+}
+
+.proj-progress-card .progress .progress-bar.bg-c-blue:after {
+    border: 3px solid #4099ff
+}
+
+.proj-progress-card .progress .progress-bar.bg-c-green:after {
+    border: 3px solid #2ed8b6
+}
+
+.bg-c-green {
+    background: #2ed8b6
+}
+
+.bg-c-yellow {
+    background: #FFB64D
+}
+
+.proj-progress-card .progress .progress-bar.bg-c-yellow:after {
+    border: 3px solid #FFB64D
+}
+
+.m-b-30 {
+    margin-bottom: 30px
+}
+
+.text-c-red {
+    color: #FF5370
+}
