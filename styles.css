@@ -1,3 +1,7 @@
+footer{
+    padding: 20px;
+}
+
 #background {
     position: fixed;
     left: 0;
@@ -51,6 +55,13 @@ h4{
     text-transform: uppercase;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.274);
 }
+h6{
+    font-weight: 700;
+}
+.contact{
+    margin-bottom: 50px;
+}
+
 #contact{
     margin-top: 100px;
 }
@@ -76,7 +87,8 @@ h4{
 }
 .section-pills{
     padding-top: 20px;
-    height: 1080px;
+    height: 100%;
+    padding-bottom: 100px;
 }
 .nav-pills > li > a:hover, .nav-pills > li > a:focus, .nav-pills > li > a {
     font-size: 15px !important;
@@ -147,6 +159,11 @@ h4{
     background-color: rgb(206, 87, 87);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.459);
 }
+.pdf:hover{
+    color: white;
+    background-color: rgb(179, 0, 0);
+    transition: 0.5s;
+}
 
 #pf-tab-1, #pf-tab-2, #pf-tab-3, #pf-tab-4, #pf-tab-5{
     width: 120px !important;
@@ -157,6 +174,37 @@ h4{
 .pfimg{
     margin-top: 80px;
     max-width: 80%;
+}
+
+iframe{
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
+}
+
+#linkedin, #instagram, #twitter{
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+#linkedin:hover{
+    color: rgb(57, 135, 253);
+}
+#instagram:hover{
+    color: rgb(199, 7, 49);
+}
+#twitter:hover{
+    color: rgb(57, 120, 255);
+}
+
+#copyright{
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+}
+.rappel{
+    color: rgba(255, 255, 255, 0.61);
 }
 
 @media screen and (max-width: 1000px) {
