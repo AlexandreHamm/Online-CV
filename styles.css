@@ -80,6 +80,12 @@ h6{
 .timetitle{
     margin-top: 30px;
 }
+.description{
+    text-align: justify;
+}
+.location{
+    font-weight: 700;
+}
 .contact{
     margin-bottom: 50px;
 }
@@ -215,6 +221,15 @@ iframe{
     }
     .device{
         display: none;
+    }
+
+    /* TIMELINE */
+
+    .left{
+        text-align: left;
+    }
+    .right{
+        text-align: right;
     }
 
     /* NAVBAR DESKTOP */
@@ -738,7 +753,7 @@ transform-origin: 0 0;
 /* Burger Style: @see: https://codepen.io/CreativeJuiz/full/oMZNXy */
 .open-main-nav {
 	position: fixed;
-	top: 1px;
+	top: 2px;
 	padding-top: 20px;
 	right: 35px;
 	z-index: 1000;
