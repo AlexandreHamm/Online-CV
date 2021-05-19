@@ -1,3 +1,20 @@
+/* NAVBAR */
+
+/*  */
+
+/* BACKGROUND SECTIONS */
+
+#ex1-pills-1, #ex1-pills-3{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(243, 243, 243);
+}
+#ex1-pills-2, #ex1-pills-3, #ex1-pills-4{
+    margin-top: 100px;
+}
+
+/*  */
+
 footer{
     padding: 20px;
 }
