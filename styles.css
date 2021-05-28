@@ -1,7 +1,10 @@
 /* NAVBAR */
 
-/*  */
+/* PORTFOLIO */
 
+.graySc{
+    filter: grayscale(70%) contrast(120%);
+}
 
 /* BACKGROUND SECTIONS */
 

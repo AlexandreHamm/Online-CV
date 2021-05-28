@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="description" content="CV en ligne"/>
     <title>Site CV - HAMM Alexandre</title>
     <!-- Bootstrap CSS -->
@@ -91,7 +91,29 @@
 
       <!-- Mobile Navbar End -->
 
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light desktop">
+      <!-- Desktop Navbar -->
+
+      <nav id="spy" class="navbar fixed-top d-flex justify-content-center navbar-light bg-light desktop">
+        <ul class="nav nav-pills d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">about me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">portfolio</a>
+          </li>
+          <!-- Logo -->
+          <img id="logo" src="./img/logo/logo.png" alt="">
+          <!-- Logo End -->
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">curriculum vitæ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading4">contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav id="spy" class="navbar fixed-top navbar-expand-lg navbar-light bg-light desktop">
         <!-- Container wrapper -->
         <div class="container-fluid">
           <!-- Collapsible wrapper -->
@@ -171,7 +193,7 @@
         <div class="tab-content" id="ex1-content">
           <div
             class="container-fluid show active"
-            id="ex1-pills-1"
+            id="ex1-pills-1" data-bs-spy="scroll" data-bs-target="#spy" data-bs-offset="0"
           >
             <h3>About me</h3>
             <div class="container-fluid px-0">
@@ -278,11 +300,11 @@
                     </div>
 
                     <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Trouve-le-nombre/" target="_blank"><img class="pfimg" src="./img/portfolio/trouvelenombre.png" alt=""></a>
+                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Trouve-le-nombre/" target="_blank"><img class="pfimg graySc" src="./img/portfolio/trouvelenombre.png" alt=""></a>
                     </div>
 
                     <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/memory-game/" target="_blank"><img class="pfimg" src="./img/portfolio/memory.png" alt=""></a>
                     </div>
 
                     <div class="col-md-2 hover-zoom">
