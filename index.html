@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="description" content="CV en ligne"/>
     <title>Site CV - HAMM Alexandre</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Bootstrap 5.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
@@ -16,441 +16,296 @@
     <!-- Font Awesome / Bootstrap Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-    />
-    <!-- MDB -->
-    <link rel="stylesheet" href="./css/mdb.min.css" />
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles.css">
-    <!-- Timeline -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  </head>
-  <body>
-    <!-- Start your project here-->
-    <header>
-
-      <!-- Mobile Navbar -->
-
-      <div class="device">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#spy" data-bs-offset="0" tabindex="0">
+    <!-- Mobile Navbar Start -->
+    <div class="device">
         <div class="container clickthrough">
-          <button id="burger" class="open-main-nav">
-            <span class="burger"></span>
-          </button>
-          <nav class="main-nav" id="main-nav">
-            <!-- Pills navs -->
-              <ul class="nav mb-3 d-flex align-items-center" id="ex1" role="tablist">
-                <li class="nav-item" role="presentation">
+            <button id="burger" class="open-main-nav">
+                <span class="burger"></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <!-- Pills navs -->
+                <ul class="nav mb-3 d-flex align-items-center">
+                    <!-- Logo -->
+                    <img id="logomobile" src="./img/logo/logo.png" alt="">
+                    <!-- MENU -->
 
-                  <!-- Logo -->
-                  <img id="logomobile" src="./img/logo/logo.png" alt="">
-
-
-
-                  <a
-                    class="nav-link active mobile"
-                    id="ex1-tab-1"
-                    href="#ex1-pills-1"
-                    >about me</a
-                  >
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a
-                    class="nav-link mobile"
-                    id="ex1-tab-2"
-                    href="#ex1-pills-2"
-                    >portfolio</a
-                  >
-                </li>
-
-                <li class="nav-item" role="presentation">
-                  <a
-                    class="nav-link mobile"
-                    id="ex1-tab-3"
-                    href="#ex1-pills-3"
-                    >curriculum vitæ</a
-                  >
-                </li>
-
-                <li class="nav-item" role="presentation">
-                  <a
-                    class="nav-link mobile"
-                    id="ex1-tab-4"
-                    href="#ex1-pills-4"
-                    >contact</a
-                  >
-                </li>
-
-              </ul>
-              <!-- Pills navs -->
-          </nav>
+                    <!-- NAV1 -->
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active mobile" href="#scrollspyHeading1">about me</a>
+                    </li>
+                    <!-- NAV2 -->
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link mobile" href="#scrollspyHeading2">portfolio</a>
+                    </li>
+                    <!-- NAV3 -->
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link mobile" href="#scrollspyHeading3">curriculum vitæ</a>
+                    </li>
+                    <!-- NAV4 -->
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link mobile" href="#scrollspyHeading4">contact</a>
+                    </li>
+                </ul>
+                <!-- Pills navs -->
+            </nav>
         </div>
       </div>
-
-      <!-- Mobile Navbar End -->
-
-      <!-- Desktop Navbar -->
-
-      <nav id="spy" class="navbar fixed-top d-flex justify-content-center navbar-light bg-light desktop">
-        <ul class="nav nav-pills d-flex justify-content-center align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">about me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">portfolio</a>
-          </li>
-          <!-- Logo -->
-          <img id="logo" src="./img/logo/logo.png" alt="">
-          <!-- Logo End -->
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading3">curriculum vitæ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading4">contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <nav id="spy" class="navbar fixed-top navbar-expand-lg navbar-light bg-light desktop">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-          <!-- Collapsible wrapper -->
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarCenteredExample"
-          >
-            <!-- Left links -->
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <!-- Pills navs -->
-              <ul class="nav nav-pills mb-3 d-flex align-items-center" id="ex1" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <a
-                    class="nav-link active"
-                    id="highlight1"
-                    href="#ex1-pills-1"
-                    >about me</a
-                  >
+    <!-- Mobile Navbar End -->
+    <!-- Desktop Navbar Start -->
+    <div class="desktop">
+        <nav id="spy" class="navbar fixed-top d-flex justify-content-center navbar-light bg-light">
+            <ul class="nav nav-pills d-flex justify-content-center align-items-center">
+            <!-- MENU -->
+                <!-- NAV1 -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="#scrollspyHeading1">about me</a>
                 </li>
-                <li class="nav-item" role="presentation">
-                  <a
-                    class="nav-link"
-                    id="highlight2"
-                    href="#ex1-pills-2"
-                    >portfolio</a
-                  >
+                <!-- NAV2 -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">portfolio</a>
                 </li>
-
                 <!-- Logo -->
                 <img id="logo" src="./img/logo/logo.png" alt="">
-
-
-                <li class="nav-item" role="presentation">
-                  <a
-                    class="nav-link"
-                    id="highlight3"
-                    href="#ex1-pills-3"
-                    >curriculum vitæ</a
-                  >
+                <!-- NAV3 -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading3">curriculum vitæ</a>
                 </li>
-
-                <li class="nav-item" role="presentation">
-                  <a
-                    class="nav-link"
-                    id="highlight4"
-                    href="#ex1-pills-4"
-                    >contact</a
-                  >
+                <!-- NAV4 -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading4">contact</a>
                 </li>
-
-              </ul>
-              <!-- Pills navs -->
             </ul>
-            <!-- Left links -->
-          </div>
-          <!-- Collapsible wrapper -->
-        </div>
-        <!-- Container wrapper -->
-      </nav>
-    </header>
-    <!-- Name -->
+        </nav>
+    </div>
+    <!-- Desktop Navbar End -->
+    <!-- MAIN TITLE START -->
     <div class="row mx-0 name">
-      <h1>HAMM ALEXANDRE</h1>
+        <h1>HAMM ALEXANDRE</h1>
     </div>
     <div class="row mx-0 name">
-      <h2 class="transparent">formation développeur web</h2>
+        <h2 class="transparent">formation développeur web</h2>
     </div>
+    <!-- MAIN TITLE END -->
     <main class="container-fluid px-0">
-      <div class="vidspace d-flex justify-content-center">
-        <!-- Tab Anchor Button -->
-      <a href="#ex1-content" type="button" class="btn btn-light btn-floating btn-lg d-flex align-items-center justify-content-center" id="btn-tab">
-        <i class="bi bi-chevron-double-down"></i>
-      </a>
-      </div>
-      <section class="container-fluid px-0 bg-light border-grey section-pills">
-        <!-- Pills content -->
-        <div class="tab-content" id="ex1-content">
-          <div
-            class="container-fluid show active"
-            id="ex1-pills-1" data-bs-spy="scroll" data-bs-target="#spy" data-bs-offset="0"
-          >
-            <h3>About me</h3>
+        <div class="vidspace d-flex justify-content-center">
+            <a href="./img/certif/pdf/attestation-pix.pdf" target="_blank">
+                <div class="pix">
+                    <div class="pixTxt">
+                    <p id="pixTitle">pix</p>
+                    <p id="pixScore">300</p>
+                    <p id="pixCert">certifiés</p>
+                    </div>
+                </div>
+            </a>
+            <!-- Tab Anchor Button -->
+            <a href="#scroll" type="button" class="btn btn-light btn-floating btn-lg d-flex align-items-center justify-content-center" id="btn-tab">
+                <i class="bi bi-chevron-double-down"></i>
+            </a>
+        </div>
+        <section class="container-fluid px-0 bg-light">
+            <div id="scroll"></div>
+            <h3 id="scrollspyHeading1">About Me</h3>
+            <!-- ABOUT ME START -->
             <div class="container-fluid px-0">
-              <div class="row">
-                <div class="col-12 col-md-3 offset-md-1">
-                  <img class="aboutme" src="./img/about me/profile.jpg" alt="">
+                <div class="row">
+                <div class="col-12 col-md-2 offset-md-2">
+                    <img class="aboutme" src="./img/about me/profile.jpg" alt="">
                 </div>
                 <div class="col-12 col-md-4">
-                  <div class="bg-dark text-uppercase d-flex justify-content-center align-items-center aboutmetitle">
+                    <div class="bg-dark text-uppercase d-flex justify-content-center align-items-center aboutmetitle">
                     à propos
-                  </div>
-                  <p class="aboutmetxt">
+                    </div>
+                    <p class="aboutmetxt">
                     Developpeur web junior en formation, je cherche à acquérir une expérience professionelle qui me permettra de renforcer ma maitrise des outils de développement web.<br><br>
                     Bilingue, il m'est possible d'avoir un contact professionel à la fois en anglais et en français.
-                  </p>
-                  </div>
-              </div>
+                    </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="container-fluid" id="ex1-pills-2">
-            <h3>Portfolio</h3>
-            <!-- Pills navs -->
+            <!-- ABOUT ME END -->
+            <h3 id="scrollspyHeading2">Portfolio</h3>
+            <!-- PORTFOLIO -->
             <ul class="nav nav-pills mb-3" id="pf" role="tablist">
-              
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link active"
-                      id="pf-tab-1"
-                      data-mdb-toggle="pill"
-                      href="#pf-pills-1"
-                      role="tab"
-                      aria-controls="pf-pills-1"
-                      aria-selected="true"
-                      >Vitrine</a
-                    >
-                  </li>
-                
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      id="pf-tab-2"
-                      data-mdb-toggle="pill"
-                      href="#pf-pills-2"
-                      role="tab"
-                      aria-controls="pf-pills-2"
-                      aria-selected="false"
-                      >Template</a
-                    >
-                  </li>
-               
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      id="pf-tab-3"
-                      data-mdb-toggle="pill"
-                      href="#pf-pills-3"
-                      role="tab"
-                      aria-controls="pf-pills-3"
-                      aria-selected="false"
-                      >Perso</a
-                    >
-                  </li>
-                
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      id="pf-tab-4"
-                      data-mdb-toggle="pill"
-                      href="#pf-pills-4"
-                      role="tab"
-                      aria-controls="pf-pills-4"
-                      aria-selected="false"
-                      >Jeux</a
-                    >
-                  </li>
-                
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      id="pf-tab-5"
-                      data-mdb-toggle="pill"
-                      href="#pf-pills-5"
-                      role="tab"
-                      aria-controls="pf-pills-5"
-                      aria-selected="false"
-                      >Animations</a
-                    >
-                  </li>
-                
+                <!-- NAV1 -->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pf-tab-1" data-bs-toggle="pill" href="#pf-pills-1" role="tab" aria-controls="pf-pills-1" aria-selected="true">Vitrine</a>
+                </li>
+                <!-- NAV2 -->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pf-tab-2" data-bs-toggle="pill" href="#pf-pills-2" role="tab" aria-controls="pf-pills-2" aria-selected="false">Template</a>
+                </li>
+                <!-- NAV3 -->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pf-tab-3" data-bs-toggle="pill" href="#pf-pills-3" role="tab" aria-controls="pf-pills-3" aria-selected="false">Perso</a>
+                </li>
+                <!-- NAV4 -->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pf-tab-4" data-bs-toggle="pill" href="#pf-pills-4" role="tab" aria-controls="pf-pills-4" aria-selected="false">Jeux</a>
+                </li>
+                <!-- NAV5 -->
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pf-tab-5" data-bs-toggle="pill" href="#pf-pills-5" role="tab" aria-controls="pf-pills-5" aria-selected="false">Animations</a>
+                </li>
             </ul>
-            <!-- Pills navs -->
             <!-- Portfolio content -->
             <div class="tab-content" id="ex1-content">
-              <div
-                class="tab-pane fade show active"
-                id="pf-pills-1"
-                role="tabpanel"
-                aria-labelledby="pf-tab-1"
-              >
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Project-Restaurant/" target="_blank"><img class="pfimg" src="./img/portfolio/bigpapa.png" alt=""></a>
-                    </div>
+                <div class="tab-pane fade show active" id="pf-pills-1" role="tabpanel" aria-labelledby="pf-tab-1">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Project-Restaurant/" target="_blank"><img class="pfimg" src="./img/portfolio/bigpapa.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Trouve-le-nombre/" target="_blank"><img class="pfimg graySc" src="./img/portfolio/trouvelenombre.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Trouve-le-nombre/" target="_blank"><img class="pfimg graySc" src="./img/portfolio/trouvelenombre.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/memory-game/" target="_blank"><img class="pfimg" src="./img/portfolio/memory.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/memory-game/" target="_blank"><img class="pfimg" src="./img/portfolio/memory.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
 
-              <div class="tab-pane fade" id="pf-pills-2" role="tabpanel" aria-labelledby="pf-tab-2">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Figma-Orange/" target="_blank"><img class="pfimg" src="./img/portfolio/figma/orange.png" alt=""></a>
-                    </div>
+                <div class="tab-pane fade" id="pf-pills-2" role="tabpanel" aria-labelledby="pf-tab-2">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Figma-Orange/" target="_blank"><img class="pfimg" src="./img/portfolio/figma/orange.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Figma-Bubbles/" target="_blank"><img class="pfimg" src="./img/portfolio/figma/bubbles.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Figma-Bubbles/" target="_blank"><img class="pfimg" src="./img/portfolio/figma/bubbles.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Figma-Shipping/" target="_blank"><img class="pfimg" src="./img/portfolio/figma/shipping.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Figma-Shipping/" target="_blank"><img class="pfimg" src="./img/portfolio/figma/shipping.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Figma-Legal/" target="_blank"><img class="pfimg" src="./img/portfolio/figma/legal.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Figma-Legal/" target="_blank"><img class="pfimg" src="./img/portfolio/figma/legal.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Figma-Grapefruit/" target="_blank"><img class="pfimg" src="./img/portfolio/figma/grapefruit.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Figma-Grapefruit/" target="_blank"><img class="pfimg" src="./img/portfolio/figma/grapefruit.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Figma-Team/" target="_blank"><img class="pfimg" src="./img/portfolio/figma/team.png" alt=""></a>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Figma-Team/" target="_blank"><img class="pfimg" src="./img/portfolio/figma/team.png" alt=""></a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="pf-pills-3" role="tabpanel" aria-labelledby="pf-tab-3">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/PHTM-Project/" target="_blank"><img class="pfimg" src="./img/portfolio/perso/phtm.png" alt=""></a>
-                    </div>
+                <div class="tab-pane fade" id="pf-pills-3" role="tabpanel" aria-labelledby="pf-tab-3">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/PHTM-Project/" target="_blank"><img class="pfimg" src="./img/portfolio/perso/phtm.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="pf-pills-4" role="tabpanel" aria-labelledby="pf-tab-4">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/memory-game/" target="_blank"><img class="pfimg" src="./img/portfolio/memory.png" alt=""></a>
-                    </div>
+                <div class="tab-pane fade" id="pf-pills-4" role="tabpanel" aria-labelledby="pf-tab-4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/memory-game/" target="_blank"><img class="pfimg" src="./img/portfolio/memory.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Trouve-le-nombre/" target="_blank"><img class="pfimg graySc" src="./img/portfolio/trouvelenombre.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/Trouve-le-nombre/" target="_blank"><img class="pfimg graySc" src="./img/portfolio/trouvelenombre.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="pf-pills-5" role="tabpanel" aria-labelledby="pf-tab-5">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/animation-liens/" target="_blank"><img class="pfimg" src="./img/portfolio/animatedLinks.gif" alt=""></a>
-                    </div>
+                <div class="tab-pane fade" id="pf-pills-5" role="tabpanel" aria-labelledby="pf-tab-5">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="https://alexandreh.promo-67.codeur.online/animation-liens/" target="_blank"><img class="pfimg" src="./img/portfolio/animatedLinks.gif" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
-                    </div>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
 
-                    <div class="col-md-2 hover-zoom">
-                      <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            <div class="col-md-2 hover-zoom">
+                                <a class="d-flex justify-content-center" href="#" target="_blank"><img class="pfimg" src="./img/portfolio/placeholder/ph.png" alt=""></a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-            <!-- Portfolio content End -->
-          </div>
-          <!-- CV -->
-          <div class="container-fluid" id="ex1-pills-3">
-            <h3>Curriculum Vitæ</h3>
-            <div class="container-fluid">
-
-              <!-- Skills -->
-
-              <div class="col-md-4 offset-md-4 text-center d-flex justify-content-center">
+            <!-- PORTFOLIO END -->
+            <h3 id="scrollspyHeading3">Curriculum Vitæ</h3>
+            <!-- SKILLS START -->
+            <div class="col-md-4 text-center d-flex justify-content-center">
                 <h5 class="skills mx-0 text-uppercase">Compétences</h5>
-              </div>
+            </div>
               
               <div class="row px-0 d-flex justify-content-center">
 
@@ -475,9 +330,9 @@
                 
                   <div class="col-xl-3 col-md-6 bg-white">
                     <h6 class="text-uppercase">javascript</h6>
-                    <h5 class="m-b-30 f-w-700">40%</h5>
+                    <h5 class="m-b-30 f-w-700">80%</h5>
                     <div class="progress">
-                      <div class="progress-bar bg-c-green" style="width:40%"></div>
+                      <div class="progress-bar bg-c-green" style="width:80%"></div>
                     </div>
                   </div>
                 
@@ -528,218 +383,114 @@
                     </div>
                   </div>
                     
-              </div>                          
-              <!-- Skills End -->
-
-              <!-- Timeline -->
-
-              <div class="col-md-4 offset-md-4 text-center d-flex justify-content-center">
-                <h5 class="skills timetitle mx-0 text-uppercase">Timeline</h5>
               </div>
+            <!-- SKILLS END -->
+            <!-- TIMELINE START -->
+            <div class="col-md-4 text-center d-flex justify-content-center">
+                <h5 class="skills mx-0 text-uppercase">Timeline</h5>
+            </div>
+            <div class="timelineBox">
+                <div class="ligne"></div>
+                <div class="rond r1" data-anim="1">&#128187;</div>
+                <div class="rond r2" data-anim="2">&#128187;</div>
+                <div class="rond r3" data-anim="3">&#128187;</div>
+                <div class="rond r4" data-anim="4">&#128187;</div>
 
-              <!-- The Timeline -->
-
-              <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="main-timeline">
-                            <div class="timeline">
-                                <a href="#" class="timeline-content">
-                                    <div class="timeline-year">
-                                        <span>2021</span>
-                                    </div>
-                                    <div class="timeline-icon">
-                                        <i class="fa fa-border-style"></i>
-                                    </div>
-                                    <div class="inner-content">
-                                        <h3 class="title">Prequal Dev Web</h3>
-                                        <p class="description">
-                                          En formation dev web, j'apprends à maîtriser les outils qui me permettront la réalisation de sites web.
-                                          <ul class="dev">
-                                            <li>HTML5</li>
-                                            <li>CSS3</li>
-                                            <li>Bootstrap</li>
-                                            <li>Javascript</li>
-                                            <li>Photoshop</li>
-                                          </ul>    
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="timeline">
-                                <a href="#" class="timeline-content">
-                                    <div class="timeline-year">
-                                        <span>2018</span>
-                                    </div>
-                                    <div class="timeline-icon">
-                                        <i class="fa fa-border-style"></i>
-                                    </div>
-                                    <div class="inner-content">
-                                        <h3 class="title">Animation Vente</h3>
-                                        <p class="description">
-                                          Chargé de diverses missions, j'ai dû user de mon relationel client afin d'augmenter la vente d'un certain produit, mon objectif principal restant la satisfaction de mon client.
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="timeline">
-                              <a href="#" class="timeline-content">
-                                  <div class="timeline-year">
-                                      <span>2018</span>
-                                  </div>
-                                  <div class="timeline-icon">
-                                      <i class="fa fa-border-style"></i>
-                                  </div>
-                                  <div class="inner-content">
-                                      <h3 class="title">Agent de dépôt</h3>
-                                      <p class="description">
-                                        En tant qu'agent de dépôt, j'étais chargé de délivrer chaque produit au client venu chercher sa commande au dépôt.
-                                      </p>
-                                  </div>
-                              </a>
-                          </div>
-                          <div class="timeline">
-                            <a href="#" class="timeline-content">
-                                <div class="timeline-year">
-                                    <span>2018</span>
-                                </div>
-                                <div class="timeline-icon">
-                                    <i class="fa fa-border-style"></i>
-                                </div>
-                                <div class="inner-content">
-                                    <h3 class="title">Vendeur High Tech</h3>
-                                    <p class="description">
-                                      Stagiaire, j'ai suivi et été formé au métier de vendeur en téléphonie mobile. J'ai beaucoup aimé le contact client, ainsi que l'ambiance sur le point de vente.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        </div>
+                <div class="box b1" data-anim="1">
+                    <h4 class="title">2021 - Prequal Dev Web</h3>
+                    <p class="description">
+                        En formation dev web, j'apprends à maîtriser les outils qui me permettront la réalisation de sites web.
+                        <ul class="dev">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap</li>
+                        <li>Javascript</li>
+                        <li>Photoshop</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="box b2" data-anim="2">
+                    <h4 class="title">2018 - Animation Vente</h3>
+                    <p class="description">
+                        Chargé de diverses missions, j'ai dû user de mon relationel client afin d'augmenter la vente d'un certain produit, mon objectif principal restant la satisfaction de mon client.
+                    </p>
+                </div>
+                <div class="box b3" data-anim="3">
+                    <h4 class="title">2018 - Agent de dépôt</h3>
+                    <p class="description">
+                    En tant qu'agent de dépôt, j'étais chargé de délivrer chaque produit au client venu chercher sa commande au dépôt.
+                    </p>
+                </div>
+                <div class="box b4" data-anim="4">
+                    <h4 class="title">2018 - Vendeur High Tech</h3>
+                    <p class="description">
+                        Stagiaire, j'ai suivi et été formé au métier de vendeur en téléphonie mobile. J'ai beaucoup aimé le contact client, ainsi que l'ambiance sur le point de vente.
+                    </p>
+                </div>
+            </div>
+            <!-- TIMELINE END -->
+            <h3 id="scrollspyHeading4">Contact</h3>
+            <!-- CONTACT START -->
+            <div class="container-fluid">              
+                <div class="row px-0 text-center">
+                    <div class="col-md-2 offset-md-4">
+                        <h6>Adresse</h6>
+                        <p class="contact">
+                        78 Avenue Général Sarrail,<br>
+                        01500, Ambérieu-en-Bugey, France
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <h6>Informations</h6>
+                        <p class="contact">
+                        Tel: 06.70.18.34.96<br>
+                        Mail: ahamm@codeur.online
+                        </p>
                     </div>
                 </div>
-            </div>
-
-              <!-- Timeline End --> 
-
-<!-- The Timeline -->
-
-
-              <!-- <div class="container my-5">
-                <div class="row">
-                  <div class="col-md-6 offset-md-3">
-                    <div class="container text-center d-flex justify-content-center">
-                      <h4 class="mx-0">Expériences</h4>
-                    </div>
-                    
-                    <ul class="timeline-3">
-                      <li>
-                        <a href="#!">Animation Vente - Intermarché Ambérieu-en-Bugey (01)</a>
-                        <a href="#!" class="float-end">Décembre, 2017</a>
-                        <p class="mt-2">Chargé de diverses missions, j'ai dû user de mon relationel client afin d'augmenter la vente d'un certain produit, mon objectif principal restant la satisfaction de mon client.</p>
-                      </li>
-                      <li>
-                        <a href="#!">Agent de dépôt - BUT Ambérieu-en-Bugey (01)</a>
-                        <a href="#!" class="float-end">Mai, 2017</a>
-                        <p class="mt-2">En tant qu'agent de dépôt, j'étais chargé de délivrer chaque produit au client venu chercher sa commande au dépôt.</p>
-                      </li>
-                      <li>
-                        <a href="#!">Manutention - Brico Cash Ambérieu-en-Bugey (01)</a>
-                        <a href="#!" class="float-end">Avril, 2017</a>
-                        <p class="mt-2">Le magasin changeant d'enseigne, ma mission d'intérimaire était de finir de monter les racks afin d'y entreposer chaque nouveau produit entrant dans la magasin, mais également de décharger les camions fournissant ces mêmes produits.</p>
-                      </li>
-                      <li>
-                        <a href="#!">Vendeur - KV Mobile Ambérieu-en-Bugey (01)</a>
-                        <a href="#!" class="float-end">Octobre, 2016</a>
-                        <p class="mt-2">Stagiaire, j'ai suivi et été formé au métier de vendeur en téléphonie mobile. J'ai beaucoup aimé le contact client, ainsi que l'ambiance sur le point de vente.</p>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="col-md-12 d-flex flex-column align-items-center">
+                    <!-- CV PDF -->
+                    <a class="pdf" href="./src/pdf/CV HAMM Alexandre.pdf" target="_blank">Télécharger mon CV</a>
+                    <!-- MAPS -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.7563269160746!2d5.33201971587924!3d45.95615137910976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b5224073cc1f1%3A0xaf04423ef22c6b1c!2s78%20Avenue%20du%20G%C3%A9n%C3%A9ral%20Sarrail%2C%2001500%20Amb%C3%A9rieu-en-Bugey!5e0!3m2!1sfr!2sfr!4v1621237374668!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-              </div> -->
-
-              <!-- Timeline End -->
-                
-
-            
-
-              
             </div>
-          </div>
-          <!-- CV End -->
-          <!-- Contact -->
-          <div
-            class="container-fluid show"
-            id="ex1-pills-4"
-          >
-            <h3>Contact</h3>
-            <div class="container-fluid">
-              
-              <div class="row px-0">
-                <div class="col-md-2 offset-md-4">
-                  <h6>Adresse</h6>
-                  <p class="contact">
-                    78 Avenue Général Sarrail,<br>
-                    01500, Ambérieu-en-Bugey, France
-                  </p>
-                </div>
-                <div class="col-md-2">
-                  <h6>Informations</h6>
-                  <p class="contact">
-                    Tel: 06.70.18.34.96<br>
-                    Mail: ahamm@codeur.online
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <a class="pdf" href="./src/pdf/CV HAMM Alexandre.pdf" target="_blank">Télécharger mon CV</a>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.7563269160746!2d5.33201971587924!3d45.95615137910976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b5224073cc1f1%3A0xaf04423ef22c6b1c!2s78%20Avenue%20du%20G%C3%A9n%C3%A9ral%20Sarrail%2C%2001500%20Amb%C3%A9rieu-en-Bugey!5e0!3m2!1sfr!2sfr!4v1621237374668!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-          </div>
-          <!-- Contact End -->
-        </div>
-        <!-- Pills content -->
-      </section>
+            <!-- CONTACT END -->
+        </section>
     </main>
     <footer class="bg-dark">
-      <div class="row px-0">
-        <!-- <div class="col-md-2 offset-md-2 d-flex justify-content-center align-items-center">
-        </div> -->
-
-        <div class="col-md-4  offset-md-4 d-flex flex-column justify-content-center align-items-center">
-          
-          <div class="col-12 d-flex justify-content-center align-items-center">
-            <a id="linkedin" href="https://www.linkedin.com/in/alexandre-hamm-a30545209/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a id="instagram" href="https://www.instagram.com/overthingz/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a id="twitter" href="https://twitter.com/OverThanVeins" target="_blank"><i class="fab fa-twitter-square"></i></a>
-          </div>
-
-          <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-            <a class="pdf" href="./src/pdf/CV HAMM Alexandre.pdf" target="_blank">Télécharger mon CV</a>
-            <span id="copyright">HAMM ALEXANDRE © 2021</span>
+        <div class="row px-0">
+          <div class="col-md-4  offset-md-4 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+              <a id="linkedin" href="https://www.linkedin.com/in/alexandre-hamm-a30545209/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a id="instagram" href="https://www.instagram.com/overthingz/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a id="twitter" href="https://twitter.com/OverThanVeins" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+              <a class="pdf" href="./src/pdf/CV HAMM Alexandre.pdf" target="_blank">Télécharger mon CV</a>
+              <span id="copyright">HAMM ALEXANDRE © 2021</span>
+            </div>
           </div>
         </div>
+      </footer>
+    
 
-        <!-- <div class="col-md-2 d-flex justify-content-center align-items-center">
-        </div> -->
-      </div>
-    </footer>
+
     <!-- Background Img -->
-    <img id="background" src="./img/background/city.jpg" alt="">
+    <img id="backgroundImg" src="./img/background/city.jpg" alt="">
     <!-- Background Vid-->
-    <video autoplay muted loop id="myVideo">
+    <video autoplay muted loop id="backgroundVid">
       <source src="./src/vid/particles2.mp4" type="video/mp4">
     </video>
-    <!-- End your project here-->
-
+    <!-- ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <!-- Bootstrap/Poppers -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <!-- MDB -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>  
     <!-- Custom scripts -->
-    <script type="text/javascript" src="./scripts.js"></script>
-    
-  </body>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
 </html>
